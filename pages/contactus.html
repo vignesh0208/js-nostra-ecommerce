@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      http-equiv="Content-Type"
+      content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Nostra</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../tailwind.config.js"></script>
+
+    <!-- Popins Font -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+    <style>
+      html,
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+
+    <!--Link Google Fonts-->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com/" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com/"
+      crossorigin="" />
+    <link
+      href="./Nostra_files/css2"
+      rel="stylesheet" />
+
+    <!--Link Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/09c0b19a14.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Current Offer Bar -->
+    <section
+      id="live-offer-banner"
+      class="bg-primary text-secondary px-[4px] py-[16px] text-center">
+      <p class="text-xs sm:text-[16px]">
+        Sign Up and <b>GET 20% OFF</b> for your first Order
+        <i
+          id="close-live-offer-banner"
+          class="fa-solid fa-xmark ml-[10%] cursor-pointer">
+          Close
+        </i>
+      </p>
+    </section>
+
+    <!--Navigation Bar-->
+    <nav
+      class="sticky top-0 flex items-center justify-between bg-white text-primary px-4 py-2 z-[3] shadow-md">
+      <h1 class="text-[32px]">Nostra</h1>
+      <div class="items-center justify-between hidden gap-6 md:flex">
+        <a
+          class="hover:underline"
+          href="/">
+          Home
+        </a>
+        <a
+          class="hover:underline"
+          href="#new-arrival">
+          New Arrival
+        </a>
+        <a
+          class="hover:underline"
+          href="#most-wanted">
+          Most Wanted
+        </a>
+        <a
+          class="hover:underline"
+          href="./collections.html">
+          Collections
+        </a>
+        <a
+          class="hover:underline"
+          href="./contactus.html">
+          Contact Us
+        </a>
+      </div>
+
+      <div class="navbar-menu-toggle md:hidden">
+        <i
+          id="open-side-navbar"
+          class="fa-solid fa-bars"
+          >Open</i
+        >
+      </div>
+    </nav>
+
+    <!--Side Navbar-->
+    <div
+      id="side-navbar"
+      class="md:hidden fixed top-0 left-0 w-[50%] h-full bg-primary text-secondary z-[10] p-[24px] translate-x-[-500px] duration-1 overflow-auto">
+      <p class="text-right">
+        <i
+          id="close-side-nav"
+          class="fa-solid fa-xmark"
+          >close</i
+        >
+      </p>
+      <div class="flex flex-col gap-6">
+        <a
+          class="hover:no-underline"
+          href="/">
+          Home
+        </a>
+        <a
+          class="hover:no-underline"
+          href="#new-arrival">
+          New Arrival
+        </a>
+        <a
+          class="hover:no-underline"
+          href="#most-wanted">
+          Most Wanted
+        </a>
+        <a
+          class="hover:no-underline"
+          href="./collections.html">
+          Collections
+        </a>
+        <a
+          class="hover:no-underline"
+          href="./contactus.html">
+          Contact Us
+        </a>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <section
+      class="bg-primary text-secondary rounded w-screen md:w-[60vw] m-auto p-8 my-5">
+      <div class="flex flex-col">
+        <h2 class="text-[24px]">Contact Us</h2>
+        <form
+          action="#"
+          method="post"
+          class="flex flex-col">
+          <div class="flex flex-col mt-4">
+            <label for="name">Name<sup>*</sup></label>
+            <input
+              class="w-full px-4 py-2 mt-2 mr-2 rounded text-primary"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Please enter a name"
+              required />
+          </div>
+
+          <div class="flex flex-col mt-4">
+            <label for="email">Email<sup>*</sup></label>
+            <input
+              class="w-full px-4 py-2 mt-2 mr-2 rounded text-primary"
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Please enter a email address"
+              required />
+          </div>
+
+          <div class="flex flex-col mt-4">
+            <label for="message">Message<sup>*</sup></label>
+            <textarea
+              class="w-full px-4 py-2 mt-2 mr-2 rounded resize-none text-primary"
+              id="message"
+              name="message"
+              placeholder="Please enter a message"></textarea>
+          </div>
+
+          <div class="flex justify-center mt-4">
+            <button
+              type="submit"
+              class="px-4 py-2 border rounded border-primary bg-secondary text-primary hover:bg-primary hover:text-secondary hover:border-secondary">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-[16px] px-4 py-8 bg-primary text-secondary">
+      <div class="flex flex-col justify-between gap-4 md:flex-row">
+        <div class="w-full md:w-[50%]">
+          <h2 class="text-[24px]">Nostra</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Consequatur, amet esse! Ratione nihil sit saepe, qui facilis maxime
+            accusamus beatae esse voluptatibus vero voluptatum laborum
+            accusantium quibusdam similique quas ipsam!
+          </p>
+        </div>
+        <div class="w-full md:w-[25%]">
+          <h2 class="text-[24px]">Join our News Letter</h2>
+          <p>
+            Signup for our email newspaper to get exclusive discounts, updates,
+            and more
+          </p>
+          <form
+            action=""
+            class="mt-2">
+            <input
+              type="email"
+              class="w-full px-4 py-2 mr-2 rounded text-primary md:w-auto"
+              placeholder="Enter your email" />
+            <button
+              class="px-4 py-2 mt-4 border rounded border-primary bg-secondary text-primary hover:bg-primary hover:text-secondary hover:border-secondary md:mt-0">
+              Subscribe <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <p class="mt-4">@ 2023 Nostra.com</p>
+    </footer>
+
+    <!--Link Javascript File-->
+    <script src="../js/common.js"></script>
+  </body>
+</html>
